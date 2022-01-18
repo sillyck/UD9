@@ -1,21 +1,21 @@
 
 public class profesor extends persona {
 	protected String materia;
-	protected static boolean noDispo;
+	protected boolean noDispo;
 	
 	public static boolean faltas() {
 		double nrandom;
 		nrandom = Math.random()*10+0;
 		
 		if(nrandom >= 0 && nrandom <=2) {
-			noDispo = false;
+			return false;
 			
 		}else if(nrandom >=3 && nrandom <= 10){
-			noDispo = true;
+			return true;
 			
 		}
 		
-		return noDispo;
+		return true;
 	}
 	
 	public profesor(String nombre,int edad,String sexo,String materia) {
