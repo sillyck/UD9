@@ -7,7 +7,7 @@ public class estudiantes extends persona {
 	}
 	@Override
 	public String toString() {
-		return "estudiantes [calificacion=" + calificacion + "]";
+		return "estudiantes [nombre=" + nombre + ", edad=" + edad + ", sexo=" + sexo + ", califiacion="+ calificacion+"]";
 	}
 
 	
