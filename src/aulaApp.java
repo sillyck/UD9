@@ -20,6 +20,9 @@ public class aulaApp {
 		a1.añadir(e6);
 		
 		System.out.println(a1);
+		
+		a1.chicosChicas();
+		a1.lista();
 	}
 
 }
