@@ -2,8 +2,8 @@
 public class aulaApp {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		persona p1 = new profesor("paco",32,"H","Matematicas");
+		System.out.println(p1);
 	}
 
 }
