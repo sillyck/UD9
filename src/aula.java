@@ -1,5 +1,6 @@
 
 public class aula {
+
 	protected int id;
 	protected int aforo;
 	protected Materia asignatura;
@@ -10,4 +11,8 @@ public class aula {
 		this.asignatura = asignatura;
 	}
 	
+		@Override
+	public String toString() {
+		return "aula [id=" + id + ", aforo=" + aforo + ", asignatura=" + asignatura + "]";
+	}
 }
