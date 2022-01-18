@@ -15,7 +15,7 @@ public class profesor extends persona {
 			
 		}
 		
-		return true;
+		return false;
 	}
 	
 	public profesor(String nombre,int edad,String sexo,String materia) {

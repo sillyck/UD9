@@ -18,10 +18,17 @@ public class estudiantes extends persona {
 		} else if (numero > 5 && numero <= 10) {
 			return true;
 		}
-		return false;
-		
+		return false;	
 	}
-
+	
+	//Filtrado de edad Estudiantes
+	public boolean edad() {
+		if (edad >= 18 && edad <= 30) {
+			return false;
+		}
+		return true;
+	}
+	
 	public String toString() {
 		return "estudiantes [nombre=" + nombre + ", edad=" + edad + ", sexo=" + sexo + ", califiacion=" + calificacion
 				+ ", novillos="+novillos +"]";
