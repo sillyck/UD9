@@ -15,7 +15,6 @@ public class aula {
 
 	// Constructor de aula
 	public aula(int id, int aforo, Materia asignatura) {
-		super();
 		this.id = id;
 		this.aforo = aforo;
 		this.asignatura = asignatura;
