@@ -1,4 +1,9 @@
-
+/*
+ * Autores: 
+ * Pau Robuste
+ * Jordi Ribellas
+ * Albert Perez
+ */
 public class persona {
 	protected String nombre;
 	protected int edad;

@@ -1,4 +1,9 @@
-
+/*
+ * Autores: 
+ * Pau Robuste
+ * Jordi Ribellas
+ * Albert Perez
+ */
 public class estudiantes extends persona {
 	protected int calificacion;
 	protected boolean novillos;

@@ -1,4 +1,9 @@
-
+/*
+ * Autores: 
+ * Pau Robuste
+ * Jordi Ribellas
+ * Albert Perez
+ */
 public class profesor extends persona {
 	protected Materia materia;
 	protected boolean noDispo;
