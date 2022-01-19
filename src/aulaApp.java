@@ -5,7 +5,6 @@ public class aulaApp {
 		profesor p1 = new profesor("Isma", 32, "H", Materia.filosofía);
 		profesor p2 = new profesor("Manuel", 32, "H", Materia.física);
 		profesor p3 = new profesor("Federico", 32, "H", Materia.matemáticas);
-		System.out.println(p1);
 		estudiantes e1 = new estudiantes("Paco", 24, "H", 1);
 		estudiantes e2 = new estudiantes("Alba", 19, "M", 5);
 		estudiantes e3 = new estudiantes("Jose", 22, "H", 6);
@@ -28,7 +27,6 @@ public class aulaApp {
 		a2.añadir(e4);
 		a2.añadir(e5);
 		a2.añadir(e6);
-
 		//System.out.println(a1);
 		
 		

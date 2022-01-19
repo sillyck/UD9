@@ -4,6 +4,7 @@ public class persona {
 	protected int edad;
 	protected String sexo;
 
+	//Constructor persona
 	public persona(String nombre, int edad, String sexo) {
 		this.nombre = nombre;
 		this.edad = edad;
