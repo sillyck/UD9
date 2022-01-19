@@ -2,16 +2,16 @@
 public class aulaApp {
 
 	public static void main(String[] args) {
-		profesor p1 = new profesor("paco", 32, "H", Materia.filosofía);
-		profesor p2 = new profesor("paco", 32, "H", Materia.física);
-		profesor p3 = new profesor("paco", 32, "H", Materia.matemáticas);
+		profesor p1 = new profesor("Isma", 32, "H", Materia.filosofía);
+		profesor p2 = new profesor("Manuel", 32, "H", Materia.física);
+		profesor p3 = new profesor("Federico", 32, "H", Materia.matemáticas);
 		System.out.println(p1);
-		estudiantes e1 = new estudiantes("paco", 32, "H", 1);
-		estudiantes e2 = new estudiantes("a", 32, "H", 1);
-		estudiantes e3 = new estudiantes("paaaaco", 32, "H", 1);
-		estudiantes e4 = new estudiantes("pasdadco", 32, "H", 1);
-		estudiantes e5 = new estudiantes("pddsfsadfaco", 32, "H", 1);
-		estudiantes e6 = new estudiantes("pasafsdafsco", 32, "H", 1);
+		estudiantes e1 = new estudiantes("Paco", 24, "H", 1);
+		estudiantes e2 = new estudiantes("Alba", 19, "M", 5);
+		estudiantes e3 = new estudiantes("Jose", 22, "H", 6);
+		estudiantes e4 = new estudiantes("Laura", 28, "H", 4);
+		estudiantes e5 = new estudiantes("Maria", 18, "M", 8);
+		estudiantes e6 = new estudiantes("Isabel", 19, "M", 9);
 		int aforo = 10;
 		aula a1 = new aula(1, aforo, Materia.física);
 		a1.añadir(e1);
@@ -29,10 +29,8 @@ public class aulaApp {
 		a2.añadir(e5);
 		a2.añadir(e6);
 
-		System.out.println(a1);
-
-		a1.chicosChicas();
-		a1.lista();
+		//System.out.println(a1);
+		
 		
 		aula.darClase(p1, a1);
 		aula.darClase(p2, a1);

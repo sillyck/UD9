@@ -36,19 +36,27 @@ public class aula {
 				}
 			}
 		}
-
+		lista();
 	}
 
 	public static void lista() {
 
 		System.out.println("Lista chicos:");
 		for (int i = 0; i < chicos.length; i++) {
-			System.out.println(chicos[i]);
+			if (chicos[i] != null) {
+				if (chicos[i].calificacion >= 5) {
+					System.out.println(chicos[i]);
+				}
+			}
 		}
 
 		System.out.println("\nLista chicas:");
 		for (int i = 0; i < chicas.length; i++) {
-			System.out.println(chicas[i]);
+			if (chicos[i] != null) {
+				if (chicas[i].calificacion >= 5) {
+					System.out.println(chicas[i]);
+				}
+			}
 		}
 	}
 
@@ -68,6 +76,7 @@ public class aula {
 			if (p1.materia.equals(a1.asignatura)) {
 				if (a1.aforo < (asistencia() * 2)) {
 					System.out.println("La clase se puede realicar");
+					chicosChicas();
 				} else {
 					System.out.println("La clase no tiene mas de un 50% de asistencia");
 				}
