@@ -1,3 +1,8 @@
+import clases.Materia;
+import clases.aula;
+import clases.estudiantes;
+import clases.profesor;
+
 /*
  * Autores: 
  * Pau Robuste

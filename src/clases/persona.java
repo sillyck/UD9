@@ -1,3 +1,4 @@
+package clases;
 /*
  * Autores: 
  * Pau Robuste
