@@ -1,6 +1,6 @@
 
 public class profesor extends persona {
-	protected String materia;
+	protected Materia materia;
 	protected boolean noDispo;
 	
 	public static boolean faltas() {
@@ -18,7 +18,7 @@ public class profesor extends persona {
 		return false;
 	}
 	
-	public profesor(String nombre,int edad,String sexo,String materia) {
+	public profesor(String nombre,int edad,String sexo,Materia materia) {
 		super(nombre,edad,sexo);
 		this.materia = materia;
 		this.noDispo = faltas();

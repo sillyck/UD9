@@ -39,15 +39,6 @@ public class aula {
 
 	}
 
-	@Override
-	public String toString() {
-		for (int i = 0; i < alumnos.length; i++) {
-			System.out.println(alumnos[i]);
-		}
-		return "aula [id=" + id + ", aforo=" + aforo + ", asignatura=" + asignatura + "]";
-
-	}
-
 	public static void lista() {
 
 		System.out.println("Lista chicos:");
@@ -59,5 +50,41 @@ public class aula {
 		for (int i = 0; i < chicas.length; i++) {
 			System.out.println(chicas[i]);
 		}
+	}
+
+	public static int asistencia() {
+		int contador = 0;
+		for (int i = 0; i < alumnos.length; i++) {
+			if (alumnos[i] != null) {
+				contador++;
+			}
+		}
+		return contador;
+	}
+
+	public static void darClase(profesor p1, aula a1) {
+
+		if (p1.noDispo == true) {
+			if (p1.materia.equals(a1.asignatura)) {
+				if (a1.aforo < (asistencia() * 2)) {
+					System.out.println("La clase se puede realicar");
+				} else {
+					System.out.println("La clase no tiene mas de un 50% de asistencia");
+				}
+			} else {
+				System.out.println("La clase no corresponde a su asignatura");
+			}
+		} else {
+			System.out.println("El profesor no esta disponible");
+		}
+	}
+
+	@Override
+	public String toString() {
+		for (int i = 0; i < alumnos.length; i++) {
+			System.out.println(alumnos[i]);
+		}
+		return "aula [id=" + id + ", aforo=" + aforo + ", asignatura=" + asignatura + "]";
+
 	}
 }
